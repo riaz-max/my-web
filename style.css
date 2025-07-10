@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to top right, #ffe0f0, #d0f0ff);
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.gift-box {
+  background: #fff0f6;
+  border: 3px solid #ff6b81;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.gift-box .lid {
+  width: 100%;
+  height: 20px;
+  background: #ff6b81;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 10px;
+}
+
+.gift-box h1 {
+  color: #ff3366;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.gift-box p {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+/* Balloons */
+.balloon {
+  position: absolute;
+  width: 40px;
+  height: 60px;
+  background-color: red;
+  border-radius: 50% 50% 50% 50%;
+  animation: float 6s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+[11:15 pm, 10/07/2025] ChatGPT: /* Random balloon placement */
+.balloon:nth-child(1) { left: 10%; background: #ff6b81; animation-delay: 0s; }
+.balloon:nth-child(2) { left: 25%; background: #ffa502; animation-delay: 1s; }
+.balloon:nth-child(3) { left: 40%; background: #70a1ff; animation-delay: 2s; }
+.balloon:nth-child(4) { left: 60%; background: #2ed573; animation-delay: 1.5s; }
+.balloon:nth-child(5) { left: 80%; background: #a29bfe; animation-delay: 0.5s; }
